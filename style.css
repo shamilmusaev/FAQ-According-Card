@@ -1,0 +1,103 @@
+body {
+    background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+
+}
+
+.main {
+    width: 1100px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main__img{
+  position: relative;
+    background: url("./images/bg-pattern-desktop.svg");
+}
+
+.main__img__box{
+    position: absolute;
+    right: 50px;
+}
+
+
+.faq-body {
+    font-size: 13px;
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    padding: 0;
+    color: hsl(237, 12%, 33%);
+    
+}
+
+.main__faq {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+}
+
+.hr-line {
+    width: 100%;
+    margin: auto;
+    background-color: hsl(240, 5%, 91%);
+   height: 1px;
+   border:none;
+
+}
+
+.faq-page {
+    font-size: 15px;
+    font-weight: 100;
+
+}
+
+.active,
+.faq-page:hover {
+    cursor: pointer;
+    
+}
+
+.faq-page:hover{
+    color: rgb(245, 148, 13);
+}
+
+.active {
+    font-weight: 800;
+}
+
+.faq-page:after {
+
+    
+    content: url(./images/icon-arrow-down.svg);
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: url(./images/icon-arrow-down.svg );
+    transform: rotate(180deg);
+    /* Unicode character for "minus" sign (-) */
+}
